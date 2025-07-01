@@ -1,0 +1,125 @@
+/* Futuristic Solo Leveling Game UI */
+.portfolio-header {
+  background: repeating-linear-gradient(
+      0deg,
+      #333 0px,
+      #333 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #333 0px,
+      #333 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    linear-gradient(120deg, #181818 70%, #1a1a2e 100%);
+  font-family: "Press Start 2P", "Arial", monospace;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.portfolio-top-left-text {
+  width: 370px;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  padding: 28px 24px;
+  border: 3px solid #00ffe7;
+  border-radius: 18px 32px 18px 32px;
+  background: rgba(24, 24, 40, 0.82);
+  box-shadow: 0 0 24px #00ffe7cc, 0 0 0 6px #222 inset, 0 0 40px #1e90ff44 inset;
+  backdrop-filter: blur(2px);
+  animation: panelGlow 2.5s infinite alternate;
+}
+
+@keyframes panelGlow {
+  0% {
+    box-shadow: 0 0 24px #00ffe7cc, 0 0 0 6px #222 inset,
+      0 0 40px #1e90ff44 inset;
+  }
+  100% {
+    box-shadow: 0 0 48px #00ffe7, 0 0 0 10px #222 inset,
+      0 0 80px #1e90ff88 inset;
+  }
+}
+
+.portfolio-name-text {
+  font-size: 2.3em;
+  letter-spacing: 2px;
+  color: #00ffe7;
+  text-shadow: 0 0 16px #00ffe7, 2px 2px 0 #000, 0 0 32px #1e90ff;
+  font-family: "Press Start 2P", "Arial", monospace;
+}
+.slogan-text {
+  font-size: 1.2em;
+  color: #fff;
+  margin-top: 16px;
+  text-shadow: 0 0 12px #00ffe7, 0 0 24px #1e90ff;
+  font-family: "Press Start 2P", "Arial", monospace;
+  letter-spacing: 1px;
+}
+
+.portfolio-services-text {
+  font-size: 2.1rem;
+  color: #ffea00;
+  text-shadow: 0 0 16px #ffea00, 2px 2px 0 #000, 0 0 32px #fff700;
+  font-family: "Press Start 2P", "Arial", monospace;
+  letter-spacing: 1px;
+}
+.portfolio-bottom-center-text {
+  border: 3px solid #ffea00;
+  border-radius: 24px 12px 24px 12px;
+  width: 720px;
+  background: rgba(24, 24, 40, 0.94);
+  padding: 36px 32px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 420px;
+  box-shadow: 0 0 32px #ffea00cc, 0 0 0 8px #222 inset, 0 0 40px #fff70044 inset;
+  backdrop-filter: blur(2px);
+  animation: panelGlowYellow 2.5s infinite alternate;
+}
+
+@keyframes panelGlowYellow {
+  0% {
+    box-shadow: 0 0 32px #ffea00cc, 0 0 0 8px #222 inset,
+      0 0 40px #fff70044 inset;
+  }
+  100% {
+    box-shadow: 0 0 64px #ffea00, 0 0 0 14px #222 inset,
+      0 0 80px #fff70088 inset;
+  }
+}
+
+/* .portfolio-work-button {
+  border: 3px solid #00ffe7;
+  background: linear-gradient(90deg, #181818 60%, #1e90ff33 100%);
+  color: #00ffe7;
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  font-family: "Press Start 2P", "Arial", monospace;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 32px;
+  box-shadow: 0 0 16px #00ffe7, 0 0 32px #1e90ff44;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  text-shadow: 0 0 8px #00ffe7, 0 0 16px #1e90ff;
+  letter-spacing: 1px;
+}
+.portfolio-work-button:hover {
+  background: linear-gradient(90deg, #00ffe7 60%, #4b5373 100%);
+  color: #181818;
+  box-shadow: 0 0 32px #00ffe7, 0 0 64px #1e90ff;
+  transform: scale(1.05);
+} */

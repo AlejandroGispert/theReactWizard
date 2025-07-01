@@ -1,21 +1,24 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Services from "./pages/Services/Services";
+import Contact from "./pages/Contact/Contact";
+//import AnimeAttackBackground from "./components/AnimeAttackBackground";
+
 function App() {
   return (
     <>
-      <header className="App">
+      <BrowserRouter>
         <Navbar />
-        <div className="top-left-text">
-          <h1 className="name-text">
-            ALEJANDRO <br /> GISPERT
-          </h1>
-          <h2 className="slogan-text">THE REACT WIZARD</h2>
-        </div>
-        <div className="bottom-center-text">
-          <h3 className="services-text">Solutions & Consultancy Services</h3>
-          <button className="work-button">WORK WITH ME.</button>
-        </div>
-      </header>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

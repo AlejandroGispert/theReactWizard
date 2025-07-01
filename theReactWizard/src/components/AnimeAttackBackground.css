@@ -1,0 +1,51 @@
+.anime-attack-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.energy {
+  animation: swirl 6s linear infinite;
+  opacity: 0.5;
+}
+
+.energy2 {
+  animation: swirl2 8s linear infinite;
+  opacity: 0.3;
+}
+
+.energy3 {
+  animation: swirl3 10s linear infinite;
+  opacity: 0.2;
+}
+
+@keyframes swirl {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.05);
+  }
+}
+
+@keyframes swirl2 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(-360deg) scale(1.1);
+  }
+}
+
+@keyframes swirl3 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.95);
+  }
+}

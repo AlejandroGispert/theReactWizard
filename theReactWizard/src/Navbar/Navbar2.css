@@ -1,0 +1,51 @@
+.navbar {
+  margin: 0;
+  height: 80px;
+  background: rgba(24, 24, 40, 0.95);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  border-bottom: 3px solid #00ffe7;
+  box-shadow: 0 4px 24px #00ffe7cc, 0 0 0 8px #181818 inset;
+  font-family: "Press Start 2P", "Arial", monospace;
+  backdrop-filter: blur(2px);
+}
+
+.navbar-end a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border: 2px solid #ffea00;
+  border-radius: 12px;
+  margin-left: 18px;
+  background: rgba(34, 34, 44, 0.95);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 0 12px #ffea00cc, 0 0 24px #fff70044;
+  font-family: "Press Start 2P", "Arial", monospace;
+  letter-spacing: 1px;
+}
+.navbar-end {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 40px;
+}
+.navbar-end a:hover {
+  background: #ffea00;
+  color: #181818;
+  box-shadow: 0 0 32px #ffea00, 0 0 64px #fff700;
+  transform: scale(1.1);
+  font-family: "Press Start 2P", "Arial", monospace;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  color: #00ffe7;
+  text-decoration: none;
+  font-family: "Press Start 2P", "Arial", monospace;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px #00ffe7, 0 0 24px #1e90ff;
+}
