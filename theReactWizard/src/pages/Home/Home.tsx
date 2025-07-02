@@ -1,9 +1,42 @@
 import "./Home.css";
+import backgroundVideo from "../../assets/videos/withbackground.mp4";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      document.body.classList.add("loaded");
+    }, 1000);
+    return () => {
+      clearTimeout(timeout);
+      document.body.classList.remove("loaded");
+    };
+  }, []);
+
   return (
     <>
       <header className="home-header">
+        <video
+          className="background-video"
+          src={backgroundVideo}
+          autoPlay
+          muted
+          playsInline
+          onEnded={(e) => e.currentTarget.pause()}
+          style={{
+            objectFit: "cover",
+            width: "100vw",
+            height: "100vh",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            zIndex: -1,
+          }}
+        />
+        <div className="wizard-eyes-container">
+          <div className="wizard-eye left-eye"></div>
+          <div className="wizard-eye right-eye"></div>
+        </div>
         <div className="top-left-text">
           <h1 className="name-text">
             ALEJANDRO <br /> GISPERT
