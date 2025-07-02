@@ -10,8 +10,10 @@ function Home() {
           </h1>
           <h2 className="slogan-text">THE REACT WIZARD</h2>
         </div>
-        <div className="bottom-center-text">
-          <h3 className="services-text">Solutions & Consultancy Services</h3>
+        <div className="home-bottom-center-text">
+          <h3 className="home-services-text">
+            Solutions & Consultancy Services
+          </h3>
           <button className="work-button">WORK WITH ME.</button>
         </div>
       </header>
