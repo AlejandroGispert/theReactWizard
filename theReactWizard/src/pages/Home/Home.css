@@ -51,7 +51,7 @@
   border-radius: 19px;
 
   /* width: 800px; */
-
+  z-index: 2;
   margin: 20px;
   padding: 20px 20px 15px 20px;
 
@@ -138,4 +138,25 @@ body.loaded .wizard-eyes-container {
   .wizard-eyes-container {
     gap: 22vw;
   }
+}
+
+.dream-blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: rgba(30, 40, 80, 0.18);
+  backdrop-filter: blur(1px);
+}
+
+.home-header,
+.top-left-text,
+.home-bottom-center-text,
+.name-text,
+.slogan-text,
+.home-services-text {
+  text-shadow: 0 0 8px #fff, 0 0 16px #00ffe7, 0 0 24px #1e90ff;
 }

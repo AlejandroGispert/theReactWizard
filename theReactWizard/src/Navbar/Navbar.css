@@ -39,3 +39,9 @@
   color: #61dafb;
   text-decoration: none;
 }
+
+.navbar,
+.navbar-end a,
+.navbar-brand {
+  text-shadow: 0 0 8px #fff, 0 0 16px #00ffe7, 0 0 24px #1e90ff;
+}

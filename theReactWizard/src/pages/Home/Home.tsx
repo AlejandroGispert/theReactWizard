@@ -33,6 +33,7 @@ function Home() {
             zIndex: -1,
           }}
         />
+        <div className="dream-blur-overlay"></div>
         <div className="wizard-eyes-container">
           <div className="wizard-eye left-eye"></div>
           <div className="wizard-eye right-eye"></div>

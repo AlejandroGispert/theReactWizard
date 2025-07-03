@@ -72,3 +72,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.dream-blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100; /* below content, above video */
+  pointer-events: none;
+  background: rgba(30, 40, 80, 0.18); /* subtle tint */
+  backdrop-filter: blur(8px);
+}
+
+.home-header,
+.top-left-text,
+.home-bottom-center-text,
+.name-text,
+.slogan-text,
+.home-services-text {
+  text-shadow: 0 0 8px #fff, 0 0 16px #00ffe7, 0 0 24px #1e90ff;
+}
