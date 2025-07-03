@@ -34,21 +34,25 @@ function Home() {
           }}
         />
         <div className="dream-blur-overlay"></div>
+
         <div className="wizard-eyes-container">
           <div className="wizard-eye left-eye"></div>
           <div className="wizard-eye right-eye"></div>
         </div>
+
         <div className="top-left-text">
           <h1 className="name-text">
             ALEJANDRO <br /> GISPERT
           </h1>
           <h2 className="slogan-text">THE REACT WIZARD</h2>
         </div>
-        <div className="home-bottom-center-text">
-          <h3 className="home-services-text">
-            Solutions & Consultancy Services
-          </h3>
-          <button className="work-button">WORK WITH ME.</button>
+        <div className="main-zoom">
+          <div className="home-bottom-center-text">
+            <h3 className="home-services-text">
+              Solutions & Consultancy Services
+            </h3>
+            <button className="work-button">WORK WITH ME.</button>
+          </div>
         </div>
       </header>
     </>

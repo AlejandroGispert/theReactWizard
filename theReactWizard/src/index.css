@@ -93,3 +93,8 @@ button:focus-visible {
 .home-services-text {
   text-shadow: 0 0 8px #fff, 0 0 16px #00ffe7, 0 0 24px #1e90ff;
 }
+
+.main-zoom {
+  transform: scale(0.8);
+  transform-origin: top center;
+}
