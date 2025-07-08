@@ -1,5 +1,5 @@
 import "./Home.css";
-import backgroundVideo from "../../assets/videos/withbackground.mp4";
+import backgroundVideo from "../../assets/videos/withbackground2.mp4";
 import { useEffect } from "react";
 
 function Home() {
