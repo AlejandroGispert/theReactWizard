@@ -6,7 +6,7 @@ function Portfolio() {
       <header className="portfolio-header">
         <div className="portfolio-top-left-text">
           <h1 className="portfolio-name-text">
-            ALEJANDRO <br /> GISPERT
+            MAGNUS <br /> SPELLFORGE
           </h1>
           <h2 className="portfolio-slogan-text">THE REACT WIZARD</h2>
         </div>

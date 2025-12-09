@@ -30,7 +30,7 @@ function Home() {
 
         <div className="top-left-text">
           <h1 className="name-text">
-            ALEJANDRO <br /> GISPERT
+            ZEPHYR <br /> MAGNUS
           </h1>
           <h2 className="slogan-text">THE REACT WIZARD</h2>
         </div>
