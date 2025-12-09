@@ -1,39 +1,46 @@
 import "./Navbar.css";
-import { useLocation } from "react-router-dom";
-import React from "react";
+import { Link } from "react-router-dom";
+import { toast } from "sonner";
 
 export function Navbar() {
-  const location = useLocation();
-
-  React.useEffect(() => {
-    if (
-      location.pathname === "/portfolio" ||
-      location.pathname === "/services" ||
-      location.pathname === "/contact"
-    ) {
-      import("./Navbar2.css");
-    } else if (location.pathname === "/") {
-      import("./Navbar.css");
-    }
-  }, [location.pathname]);
+  const handleDemoClick = (pageName: string) => {
+    toast.info(
+      `This is a demo page only - ${pageName} coming soon! Mvh Alejandro`,
+      {
+        duration: 2000,
+      }
+    );
+  };
 
   return (
     <nav className="navbar">
       <div className="navbar-brand"></div>
       <div className="navbar-menu">
         <div className="navbar-end">
-          <a href="/" className="navbar-item">
+          <Link to="/" className="navbar-item cursor-pointer">
             Home
-          </a>
-          <a href="/portfolio" className="navbar-item">
+          </Link>
+          <Link
+            to="/"
+            className="navbar-item cursor-pointer"
+            onClick={() => handleDemoClick("Portfolio")}
+          >
             Portfolio
-          </a>
-          <a href="/services" className="navbar-item">
+          </Link>
+          <Link
+            to="/"
+            className="navbar-item cursor-pointer"
+            onClick={() => handleDemoClick("Services")}
+          >
             Services
-          </a>
-          <a href="/contact" className="navbar-item">
+          </Link>
+          <Link
+            to="/"
+            className="navbar-item cursor-pointer"
+            onClick={() => handleDemoClick("Contact")}
+          >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
