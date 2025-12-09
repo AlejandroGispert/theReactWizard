@@ -55,6 +55,8 @@
   position: absolute;
   top: 15px;
   right: 15px;
+  background: transparent;
+  border: none;
   color: #00ffe7;
   width: 40px;
   height: 40px;
@@ -68,6 +70,7 @@
 }
 
 .contact-modal-close:hover {
+  opacity: 0.8;
 }
 
 .contact-modal-content {

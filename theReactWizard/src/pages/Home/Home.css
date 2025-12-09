@@ -39,11 +39,6 @@
   transform-origin: top center;
 }
 
-.name-text {
-}
-.slogan-text {
-}
-
 .home-services-text {
   /* font-size: 50px; */
   color: #fff;
@@ -74,59 +69,6 @@
   background-color: #ffffff;
   color: #000000;
   border-color: #fff;
-}
-
-.wizard-eyes-container {
-  position: fixed;
-  top: 38vh; /* Fallback position, will be overridden by JavaScript */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 11vw;
-  align-items: center;
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), top 0.3s ease-out;
-  /* Top position will be set dynamically via JavaScript for better alignment */
-}
-
-body.loaded .wizard-eyes-container {
-  opacity: 1;
-  transition-delay: 3s;
-}
-
-.wizard-eye {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #00ffe7;
-  box-shadow: 0 0 32px 12px #00ffe7, 0 0 64px 24px #1e90ff, 0 0 8px 2px #fff;
-  animation: eye-glow-pulse 2.8s ease-in-out infinite;
-  border: none;
-}
-
-@keyframes eye-glow-pulse {
-  0%,
-  100% {
-    box-shadow: 0 0 32px 12px #00ffe7, 0 0 64px 24px #1e90ff, 0 0 8px 2px #fff;
-    transform: scale(1);
-  }
-  50% {
-    box-shadow: 0 0 48px 24px #00ffe7, 0 0 96px 36px #1e90ff, 0 0 16px 4px #fff;
-    transform: scale(1.18);
-  }
-}
-
-.left-eye {
-  transform: translateX(-2px);
-}
-
-@media (max-width: 600px) {
-  .wizard-eyes-container {
-    gap: 22vw;
-  }
 }
 
 .dream-blur-overlay {
